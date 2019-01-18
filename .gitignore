@@ -5,7 +5,6 @@
 *.pydevproject
 .project
 .metadata
-bin/
 tmp/
 *.tmp
 *.bak
@@ -28,6 +27,17 @@ local.properties
 # PDT-specific
 .buildpath
 
+################
+## Rider
+################
+
+.idea/
+
+################
+## VS Code
+################
+
+.vscode/
 
 #################
 ## Visual Studio
@@ -39,14 +49,34 @@ local.properties
 # User-specific files
 *.suo
 *.user
+*.userosscache
 *.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
 
 # Build results
 [Dd]ebug/
 [Rr]elease/
-AngleSharp.sln.ide/
+[Bb]in/
+[Bb]uild/
+[Oo]bj/
+
+# Visual Studio 2015 cache/options directory
+.vs/
+
+# DNX
+*.lock.json
+artifacts/
+
+[Dd]ebug/
+[Rr]elease/
+[Pp]ackages/
+[Tt]ools/
+![Tt]ools/packages.config
 TestResults/
-/Nuget/lib/
+*.nuget.targets
+*.nuget.props
 *.nupkg
 *_i.c
 *_p.c
@@ -67,9 +97,6 @@ TestResults/
 .builds
 *.dotCover
 *.dotSettings
-
-## Thanks to NuGet Package Restore
-packages/
 
 # Visual C++ cache files
 ipch/
@@ -145,7 +172,6 @@ dist
 build
 eggs
 parts
-bin
 var
 sdist
 develop-eggs
